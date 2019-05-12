@@ -1,35 +1,37 @@
 .imageContainer {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     text-align: center;
     display: table-cell;
-    vertical-align: middle;
+    /* vertical-align: middle; */
+    padding-top: 4px;
 }
 
 .detailContainer {
     /* text-align: -webkit-center; */
+    padding: 0;
     position: relative;
 }
 
 .image {
     width: auto;
-    height: 80%;
+    height: 100%;
 }
 
 .sigils {
     position: absolute;
-    top: 36px;
+    top: 0px;
     right: 36px;
 }
 
 .sigils img {
-    width: 212px;
+    width: 197px;
 }
 
 .details {
     display: flex;
     text-align: left;
-    margin-top: 24px;
+    margin-top: 12px;
 }
 
 li {
@@ -47,17 +49,17 @@ li {
     margin-left: 73px;
 }
 .parents {
-    margin-left: 64px;
+    margin-left: 65px;
 }
 .siblings {
-    margin-left: 62px;
+    margin-left: 64px;
 }
 .serves {
-    margin-left: 72px;
+    margin-left: 71px;
 }
 .killed {
     margin-left: 79px;
 }
 .killedby {
-    margin-left: 57px;
+    margin-left: 60px;
 }

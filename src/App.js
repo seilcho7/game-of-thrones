@@ -49,11 +49,13 @@ class App extends React.Component {
         <Route path='/characters'
           render={(props) => (
             <div>
-              <Searchbar text={this.state.inputText} handleChange={this._setInput} />
               <div className="char-container">
+              <div className="list-search">
+                <Searchbar text={this.state.inputText} handleChange={this._setInput} />
                 <div className="list">
                   <Characters {...props} search={this.state.inputText} characters={this.state.characters} handleClick={this._setIndex}/>
                 </div>
+              </div>
                 <div className="detail">
                 {
                   this.state.charIndex !== '' ? 
