@@ -8,7 +8,7 @@ export default function Characters({search, characters, handleClick}) {
             return (
                 <li key={i}><button onClick={() => {
                     handleClick(i)
-                }}><img className={styles.thumb} src={char.characterImageThumb || avatar} onError={(e)=>{e.target.onerror = null; e.target.src=avatar}}></img>{char.characterName}</button></li>
+                }}><img className={styles.thumb} src={char.characterImageThumb || avatar} onError={(e)=>{e.target.onerror = null; e.target.src=avatar}}></img> {char.characterName}</button></li>
             )
         }
     });

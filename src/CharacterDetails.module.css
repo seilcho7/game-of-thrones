@@ -1,7 +1,52 @@
+.imageContainer {
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.detailContainer {
+    text-align: -webkit-center;
+}
+
 .image {
-    max-width: 300px;
+    width: auto;
+    max-height: 500px;
 }
 
 .details {
     display: flex;
+    text-align: left;
+    margin-top: 24px;
+}
+
+li {
+    margin: 2px;
+}
+
+
+.name {
+    margin-left: 88px;
+}
+.actor {
+    margin-left: 80px;
+}
+.house {
+    margin-left: 86px;
+}
+.parents {
+    margin-left: 64px;
+}
+.siblings {
+    margin-left: 70px;
+}
+.serves {
+    margin-left: 86px;
+}
+.killed {
+    margin-left: 82px;
+}
+.killedby {
+    margin-left: 58px;
 }
