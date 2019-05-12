@@ -14,7 +14,15 @@ export default function CharacterDetails({character}) {
     } else {
         names = [];
     }
- 
+
+    let houses = '';
+    if (character.houseName) {
+        houses = character.houseName
+    } else {
+        houses = null
+    }
+    console.log(houses);
+    
     return (
         <div className={styles.detailContainer}>
             <div className={styles.imageContainer}>
@@ -24,7 +32,7 @@ export default function CharacterDetails({character}) {
                 <ul>
                     <li>Name: <span className={styles.name}>{character.characterName}</span></li>
                     <li>Actor: <span className={styles.actor}>{names.length === 1 ? names[0] : names.length > 1 ? names.map((name) => (name)).reduce((prev, curr) => prev === null ? [curr] : [prev, ', ', curr], null) : "N/A"}</span></li>
-                    <li>House: <span className={styles.house}>{character.houseName || "N/A"}</span></li>
+                    <li>House: <span className={styles.house}>{typeof houses === "string" ? houses : houses && typeof houses === "object" ? houses.join(', ') : "N/A"}</span></li>
                     <li>Parents: <span className={styles.parents}>{character.parents ? character.parents.join(', ') : null || "N/A"}</span></li>
                     <li>Siblings: <span className={styles.siblings}>{character.siblings ? character.siblings.join(', ') : null || "N/A"}</span></li>
                     <li>Serves: <span className={styles.serves}>{character.serves ? character.serves.join(', ') : null || "N/A"}</span></li>
