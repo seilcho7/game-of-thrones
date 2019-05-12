@@ -26,6 +26,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <div className="title">
+          #
+        </div>
         <div>
           <ul className="nav justify-content-center">
             <li className="nav-item">

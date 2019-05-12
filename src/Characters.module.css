@@ -15,7 +15,7 @@ button {
     border: none;
     margin: 2px;
     text-align: left;
-    padding: 0;
+    padding: 0, 4px;
 }
 
 button:hover {

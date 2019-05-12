@@ -1,18 +1,29 @@
 .imageContainer {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
 }
 
 .detailContainer {
-    text-align: -webkit-center;
+    /* text-align: -webkit-center; */
+    position: relative;
 }
 
 .image {
     width: auto;
-    max-height: 500px;
+    height: 80%;
+}
+
+.sigils {
+    position: absolute;
+    top: 36px;
+    right: 36px;
+}
+
+.sigils img {
+    width: 212px;
 }
 
 .details {
@@ -27,26 +38,26 @@ li {
 
 
 .name {
-    margin-left: 88px;
+    margin-left: 77px;
 }
 .actor {
     margin-left: 80px;
 }
 .house {
-    margin-left: 86px;
+    margin-left: 73px;
 }
 .parents {
     margin-left: 64px;
 }
 .siblings {
-    margin-left: 70px;
+    margin-left: 62px;
 }
 .serves {
-    margin-left: 86px;
+    margin-left: 72px;
 }
 .killed {
-    margin-left: 82px;
+    margin-left: 79px;
 }
 .killedby {
-    margin-left: 58px;
+    margin-left: 57px;
 }
