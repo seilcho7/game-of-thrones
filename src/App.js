@@ -7,11 +7,13 @@ import {
 } from 'react-router-dom';
 
 import characters from './data/characters';
+import episodes from './data/episodes';
 
 import Home from './components/Home';
 import Characters from './components/Characters';
 import Searchbar from './components/Searchbar';
 import CharacterDetails from './components/CharacterDetails';
+import Seasons from './components/Seasons';
 
 class App extends React.Component {
   constructor(props) {
@@ -19,7 +21,8 @@ class App extends React.Component {
     this.state = {
       characters: characters.characters,
       inputText: '',
-      charIndex: ''
+      charIndex: '',
+      episodes: episodes.episodes
     }
   }
 
@@ -38,7 +41,7 @@ class App extends React.Component {
               <Link className="nav-link" to="/characters">CHARACTERS</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">WHAT</Link>
+              <Link className="nav-link" to="/episodes">EPISODES</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/">NO</Link>
@@ -63,6 +66,10 @@ class App extends React.Component {
                 </div>
               </div>
             </div>
+          )} />
+        <Route path='/episodes'
+          render={(props) => (
+            <Seasons {...props} episodes={this.state.episodes} />
           )} />
       </div>
     );

@@ -1,18 +1,18 @@
 .list {
     list-style: none;
     border: solid grey;
-    padding-left: 14px;
+    padding-left: 2%;
     padding-bottom: 60px;
 }
 
 .thumb {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
 }
 
 button {
     height: 100%;
-    width: 90%;
+    /* width: 90%; */
     border: none;
     margin: 2px;
     text-align: left;
