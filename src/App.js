@@ -14,6 +14,8 @@ import Characters from './components/Characters';
 import Searchbar from './components/Searchbar';
 import CharacterDetails from './components/CharacterDetails';
 import Seasons from './components/Seasons';
+import Episode from './components/Episode';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -22,15 +24,21 @@ class App extends React.Component {
       characters: characters.characters,
       inputText: '',
       charIndex: '',
-      episodes: episodes.episodes
+      episodes: episodes.episodes,
+      episode: ''
     }
   }
 
   render() {
     return (
       <div>
-        <div className="title">
-          #
+        <div>
+          <div className="title">
+            #
+          </div>
+          <div className="soundcloud">
+            <iframe title="soundcloud" width="20px" height="20px" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/30990827&color=%23ff5500&auto_play=true&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
+          </div>
         </div>
         <div>
           <ul className="nav justify-content-center">
@@ -44,7 +52,7 @@ class App extends React.Component {
               <Link className="nav-link" to="/episodes">EPISODES</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">NO</Link>
+              <Link className="nav-link" to="/musics">MAP</Link>
             </li>
           </ul>
         </div>
@@ -69,7 +77,10 @@ class App extends React.Component {
           )} />
         <Route path='/episodes'
           render={(props) => (
-            <Seasons {...props} episodes={this.state.episodes} />
+            <div>
+            <Seasons {...props} episodes={this.state.episodes} showEpisode={this._setEpisode} />
+            <Episode episode={this.state.episode} />
+            </div>
           )} />
       </div>
     );
@@ -84,6 +95,13 @@ class App extends React.Component {
   _setIndex = (charIndex) => {
     this.setState({
       charIndex
+    })
+  }
+
+  _setEpisode = (e) => {
+    console.log(this.state.episode);
+    this.setState({
+      episode: e
     })
   }
 }

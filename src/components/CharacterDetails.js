@@ -28,11 +28,10 @@ import westerling from '../data/img/westerling.jpg';
 export default function CharacterDetails({character}) {
     let names = [];
     if (character.actorName) {
-        names.push(<a target="_blank" href={character.actorLink ? `https://www.imdb.com${character.actorLink}` : null}>{character.actorName}</a>);
+        names.push(<a target="_blank" rel="noopener noreferrer" href={character.actorLink ? `https://www.imdb.com${character.actorLink}` : null}>{character.actorName}</a>);
     } else if (character.actors) {
         character.actors.forEach((actor) => {
-            console.log(actor.actorName)
-        names.push(<span><a target="_blank" href={actor.actorLink ? `https://www.imdb.com${actor.actorLink}` : null}>{actor.actorName}</a> (S: {actor.seasonsActive.join(', ')})</span>)
+        names.push(<span><a target="_blank" rel="noopener noreferrer" href={actor.actorLink ? `https://www.imdb.com${actor.actorLink}` : null}>{actor.actorName}</a> (S: {actor.seasonsActive.join(', ')})</span>)
         });
     } else {
         names = [];
@@ -73,20 +72,17 @@ export default function CharacterDetails({character}) {
 
     let sigil = [];
     if (houses && typeof houses === "string") {
-        sigil.push(<img src={character.houseName && sigils[character.houseName] ? sigils[character.houseName] : null}></img>)
+        sigil.push(<img alt="error" src={character.houseName && sigils[character.houseName] ? sigils[character.houseName] : null}></img>)
     } else if (houses && typeof houses === "object") {
         houses.map((s) => {
-            sigil.push(<img src={sigils[s] ? sigils[s] : null}></img>)
+            return sigil.push(<img alt="error" src={sigils[s] ? sigils[s] : null}></img>)
         })
     }
-    console.log(houses);
-    console.log(sigil);
-
     
     return (
         <div className={styles.detailContainer}>
             <div className={styles.imageContainer}>
-                <img className={styles.image} src={character.characterImageFull ? character.characterImageFull : avatar}></img>
+                <img alt="error" className={styles.image} src={character.characterImageFull ? character.characterImageFull : avatar}></img>
             </div>
             <div className={styles.sigils}>
                 {/* <img src={character.houseName && sigils[character.houseName] ? sigils[character.houseName] : null}></img> */}

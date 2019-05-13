@@ -51,3 +51,32 @@ html, body {
 li {
     list-style: none;
 }
+
+a {
+    color: #f2aa4cff;
+}
+
+.soundcloud {
+    position: absolute;
+    display: relative;
+    top: 1%;
+}
+
+.soundcloud button:focus {
+    outline: 0;
+}
+
+.soundcloud button img {
+    width: 40px;
+    height: 40px;
+}
+
+.soundcloud button img:hover {
+    width: 42px;
+    height: 42px;
+}
+
+.soundcloud button img:active {
+    width: 40px;
+    height: 40px;
+}
