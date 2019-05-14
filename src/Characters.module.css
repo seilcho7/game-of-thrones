@@ -21,3 +21,27 @@
 .list button:hover {
     color: #f2aa4cff;
 }
+
+@media only screen and (max-width: 768px) {
+    .list {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .thumb {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .list button {
+        height: 100%;
+        border: none;
+        margin: 1px;;
+        text-align: left;
+        padding: 0, 4px;
+    }
+    
+    .list button:hover {
+        color: #f2aa4cff;
+    }
+}

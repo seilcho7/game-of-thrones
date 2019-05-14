@@ -40,3 +40,52 @@
 li {
     margin: 2px;
 }
+
+@media only screen and (max-width: 768px) {
+    .imageContainer {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        display: table-cell;
+        padding-top: 2px;
+    }
+    
+    .detailContainer {
+        padding: 0;
+        position: relative;
+        margin-top: 4%;
+    }
+    
+    .image {
+        width: auto;
+        height: 100%;
+    }
+    
+    .sigils {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    
+    .sigils img {
+        width: 60px;
+    }
+    
+    .details {
+        display: flex;
+        text-align: left;
+        margin-top: 12px;
+    }
+
+    .details ul {
+        padding: 0;
+    }
+    
+    .bold {
+        font-weight: bold;
+    }
+    
+    li {
+        margin: 2px;
+    }
+  }

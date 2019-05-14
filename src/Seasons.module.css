@@ -16,3 +16,25 @@
     width: 24%;
     margin: 1%;
 }
+
+@media only screen and (max-width: 768px) {
+    .seasons button {
+        background-color: white;
+        color: black;
+        border-color: black;
+        margin: 6px 4%;
+        font-size: 12px;
+    }
+    
+    .seasons button:hover {
+        background-color: white;
+        color: #f2aa4cff;
+        border-color: #f2aa4cff;
+    }
+    
+    .seasons {
+        /* border: solid red; */
+        width: 15%;
+        margin: 1%;
+    }
+}

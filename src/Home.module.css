@@ -9,3 +9,17 @@
 .background img {
     width: 100%;
 }
+
+@media only screen and (max-width: 768px) {
+    .background {
+        width: 90%;
+        padding: 1%;
+        background-color: #f2aa4cff;
+        margin: auto;
+        margin-top: 10%;
+    }
+    
+    .background img {
+        width: 100%;
+    }
+}
