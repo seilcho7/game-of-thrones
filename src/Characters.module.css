@@ -1,8 +1,8 @@
 .list {
     list-style: none;
-    border: solid grey;
+    /* border: solid grey; */
     padding-left: 2%;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
 }
 
 .thumb {
@@ -10,17 +10,14 @@
     height: 26px;
 }
 
-button {
+.list button {
     height: 100%;
-    /* width: 90%; */
     border: none;
     margin: 2px;
     text-align: left;
     padding: 0, 4px;
 }
 
-button:hover {
-    font-size: 16px;
-    font-weight: bold;
-
+.list button:hover {
+    color: #f2aa4cff;
 }

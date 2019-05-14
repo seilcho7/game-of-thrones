@@ -3,14 +3,13 @@
     height: 300px;
     text-align: center;
     display: table-cell;
-    /* vertical-align: middle; */
     padding-top: 4px;
 }
 
 .detailContainer {
-    /* text-align: -webkit-center; */
     padding: 0;
     position: relative;
+    margin-top: 4%;
 }
 
 .image {
@@ -34,32 +33,10 @@
     margin-top: 12px;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 li {
     margin: 2px;
 }
-
-
-/* .name {
-    margin-left: 77px;
-}
-.actor {
-    margin-left: 80px;
-}
-.house {
-    margin-left: 73px;
-}
-.parents {
-    margin-left: 65px;
-}
-.siblings {
-    margin-left: 64px;
-}
-.serves {
-    margin-left: 71px;
-}
-.killed {
-    margin-left: 79px;
-}
-.killedby {
-    margin-left: 60px;
-} */

@@ -1,0 +1,11 @@
+.background {
+    width: 76%;
+    padding: 1%;
+    background-color: #f2aa4cff;
+    margin: auto;
+    margin-top: 1.6%;
+}
+
+.background img {
+    width: 100%;
+}

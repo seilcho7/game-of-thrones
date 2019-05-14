@@ -1,0 +1,20 @@
+.episodes {
+    /* border: solid blue; */
+    width: 65%;
+    margin-right: 5%;
+}
+
+.details {
+    margin-top: 4%;
+    padding: 0;
+}
+
+.image {
+    margin-top: 2%;
+    width: 60%;
+    /* padding: 1%; */
+    /* background-color: #f2aa4cff; */
+}
+.image img {
+    width: 100%;
+}

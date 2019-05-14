@@ -85,21 +85,18 @@ export default function CharacterDetails({character}) {
                 <img alt="error" className={styles.image} src={character.characterImageFull ? character.characterImageFull : avatar}></img>
             </div>
             <div className={styles.sigils}>
-                {/* <img src={character.houseName && sigils[character.houseName] ? sigils[character.houseName] : null}></img> */}
-                {sigil.map((s) => (
-                    s
-                ))}
+                {sigil.map((s) => (s))}
             </div>
-            <div className={styles.details}>   
+            <div className={styles.details}> 
                 <ul>
-                    <li>Name: <span className={styles.name}>{character.characterName}</span></li>
-                    <li>Actor: <span className={styles.actor}>{names.length === 1 ? names[0] : names.length > 1 ? names.map((name) => (name)).reduce((prev, curr) => prev === null ? [curr] : [prev, ', ', curr], null) : "N/A"}</span></li>
-                    <li>House: <span className={styles.house}>{typeof houses === "string" ? houses : houses && typeof houses === "object" ? houses.join(', ') : "N/A"}</span></li>
-                    <li>Parents: <span className={styles.parents}>{character.parents ? character.parents.join(', ') : null || "N/A"}</span></li>
-                    <li>Siblings: <span className={styles.siblings}>{character.siblings ? character.siblings.join(', ') : null || "N/A"}</span></li>
-                    <li>Serves: <span className={styles.serves}>{character.serves ? character.serves.join(', ') : null || "N/A"}</span></li>
-                    <li>Killed: <span className={styles.killed}>{character.killed ? character.killed.join(', ') : null || "N/A"}</span></li>
-                    <li>Killed By: <span className={styles.killedby}>{character.killedBy ? character.killedBy.join(', ') : null || "N/A"}</span></li>
+                    <li><strong>Name: </strong>{character.characterName}</li>
+                    <li><strong>Actor: </strong>{names.length === 1 ? names[0] : names.length > 1 ? names.map((name) => (name)).reduce((prev, curr) => prev === null ? [curr] : [prev, ', ', curr], null) : "N/A"}</li>
+                    <li><strong>House: </strong>{typeof houses === "string" ? houses : houses && typeof houses === "object" ? houses.join(', ') : "N/A"}</li>
+                    <li><strong>Parents: </strong>{character.parents ? character.parents.join(', ') : null || "N/A"}</li>
+                    <li><strong>Siblings: </strong>{character.siblings ? character.siblings.join(', ') : null || "N/A"}</li>
+                    <li><strong>Serves: </strong>{character.serves ? character.serves.join(', ') : null || "N/A"}</li>
+                    <li><strong>Killed: </strong>{character.killed ? character.killed.join(', ') : null || "N/A"}</li>
+                    <li><strong>Killed By: </strong>{character.killedBy ? character.killedBy.join(', ') : null || "N/A"}</li>
                 </ul>
             </div>
         </div>

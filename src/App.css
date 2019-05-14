@@ -1,15 +1,19 @@
 html, body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    border: solid green;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-size: 14px; */
+    /* border: solid green; */
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .nav, .title {
     font-family: 'Game of Thrones';
     font-weight: normal;
     font-style: normal;
+}
+
+.nav {
+    border-bottom: 10px solid black;
 }
 
 .title {
@@ -21,9 +25,9 @@ html, body {
 .list {
     height: 100%;
     width: 100%;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
     margin-left: 5%;
-    border: solid red;
+    border: 4px solid black;
     overflow: auto;
 }
 
@@ -32,16 +36,16 @@ html, body {
     width: 65%;
     /* padding: 14px; */
     margin: 0;
-    border: solid blue;
+    /* border: solid blue; */
     margin: auto;
 }
 
 .char-container {
     width: 100%;
-    height: 100%;
+    height: 76%;
     position: fixed;
     display: flex;
-    border: solid black;
+    /* border: solid black; */
 }
 
 .list-search {
@@ -60,6 +64,7 @@ a {
     position: absolute;
     display: relative;
     top: 1%;
+    left: 1%;
 }
 
 .soundcloud button:focus {
@@ -79,4 +84,24 @@ a {
 .soundcloud button img:active {
     width: 40px;
     height: 40px;
+}
+
+.episodes {
+    display: flex;
+}
+
+.charactersimg {
+    width: 88%;
+    margin-top: 2%;
+}
+
+.episodeimg {
+    /* border: solid black; */
+    width: 60%;
+    margin-top: 3%;
+}
+
+.episodeimg img {
+    width: 400px;
+    margin: 1%;
 }

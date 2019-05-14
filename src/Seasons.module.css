@@ -1,0 +1,18 @@
+.seasons button {
+    background-color: white;
+    color: black;
+    border-color: black;
+    margin: 10px 10%;
+}
+
+.seasons button:hover {
+    background-color: white;
+    color: #f2aa4cff;
+    border-color: #f2aa4cff;
+}
+
+.seasons {
+    /* border: solid red; */
+    width: 24%;
+    margin: 1%;
+}

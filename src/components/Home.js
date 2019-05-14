@@ -1,9 +1,10 @@
 import React from 'react';
+import styles from '../Home.module.css';
 
 export default function Home() {
     return (
-        <div>
-            <h1>GAME OF THRONES</h1>
+        <div className={styles.background}>
+            <img src="https://i.imgur.com/rRMzbn3.jpg"></img>
         </div>
     )
 }

@@ -43,16 +43,13 @@ class App extends React.Component {
         <div>
           <ul className="nav justify-content-center">
             <li className="nav-item">
-              <Link className="nav-link" to="/">HOME</Link>
+              <Link onClick={this._reset} className="nav-link" to="/">HOME</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/characters">CHARACTERS</Link>
+              <Link onClick={this._reset} className="nav-link" to="/characters">CHARACTERS</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/episodes">EPISODES</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/musics">MAP</Link>
+              <Link onClick={this._reset} className="nav-link" to="/episodes">EPISODES</Link>
             </li>
           </ul>
         </div>
@@ -70,16 +67,16 @@ class App extends React.Component {
                 <div className="detail">
                 {
                   this.state.charIndex !== '' ? 
-                    <CharacterDetails character={this.state.characters[this.state.charIndex]} /> : null} 
+                    <CharacterDetails character={this.state.characters[this.state.charIndex]} /> : <img className="charactersimg" src="https://i.imgur.com/t5aVCzB.jpg"></img>} 
                 </div>
               </div>
             </div>
           )} />
         <Route path='/episodes'
           render={(props) => (
-            <div>
+            <div className="episodes">
             <Seasons {...props} episodes={this.state.episodes} showEpisode={this._setEpisode} />
-            <Episode episode={this.state.episode} />
+            {this.state.episode ? <Episode episode={this.state.episode} /> : <div className="episodeimg"><img className="e1" src="https://static.boredpanda.com/blog/wp-content/uploads/2017/08/game-of-thrones-season-7-episode-7-behind-the-scenes-16.gif"></img><img className="e2" src="https://i.imgur.com/RDGO6WG.jpg"></img><img className="e3" src="https://i.imgur.com/J4cON6l.jpg"></img><img className="e4" src="https://static.boredpanda.com/blog/wp-content/uploads/2017/08/game-of-thrones-season-7-episode-7-behind-the-scenes-15.gif"></img></div>}
             </div>
           )} />
       </div>
@@ -99,9 +96,16 @@ class App extends React.Component {
   }
 
   _setEpisode = (e) => {
-    console.log(this.state.episode);
     this.setState({
       episode: e
+    })
+  }
+
+  _reset = () => {
+    this.setState({
+      charIndex: '',
+      episode: '',
+      inputText: ''
     })
   }
 }
