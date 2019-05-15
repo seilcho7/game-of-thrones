@@ -8,6 +8,7 @@ import {
 
 import characters from './data/characters';
 import episodes from './data/episodes';
+import logo from './data/img/logo.png';
 
 import Home from './components/Home';
 import Characters from './components/Characters';
@@ -34,7 +35,7 @@ class App extends React.Component {
       <div>
         <div>
           <div className="title">
-            #
+            <img src={logo}></img>
           </div>
           <div className="soundcloud">
             <iframe title="soundcloud" width="20px" height="20px" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/30990827&color=%23ff5500&auto_play=true&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
