@@ -39,7 +39,7 @@ html, body {
 .char-container {
     width: 100%;
     height: 76%;
-    position: fixed;
+    position: absolute;
     display: flex;
 }
 
@@ -128,12 +128,13 @@ a {
     }
     .char-container {
         width: 100%;
-        height: 68%;
+        height: 100%;
         display: block;
+        position: absolute;
     }
     .list-search {
         width: 90%;
-        height: 30%;
+        height: 27%;
     }
     li {
         list-style: none;
