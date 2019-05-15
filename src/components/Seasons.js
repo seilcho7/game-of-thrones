@@ -6,7 +6,6 @@ export default function Seasons({episodes, showEpisode}) {
     const season1 = episodes.filter((s) => {
         return s.seasonNum === 1;
     }).map((e, i) => {
-        // console.log(e);
         return <Dropdown.Item key={i} onClick={() => (showEpisode(e))}>{`Episode: ${e.episodeNum}`}</Dropdown.Item>
     })
 
