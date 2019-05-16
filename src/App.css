@@ -96,7 +96,7 @@ a {
 }
 
 .episodeimg img {
-    width: 400px;
+    width: 300px;
     margin: 1%;
 }
 
@@ -186,7 +186,7 @@ a {
     }
     
     .episodeimg img {
-        width: 180px;
+        width: 140px;
         margin: 1%;
     }
 }
