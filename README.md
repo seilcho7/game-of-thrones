@@ -6,6 +6,8 @@ A website about popular tv show from HBO, game of thrones, intended to show desc
 Purpose of this mini project was to use React.js along with Router to build a simple, working website.
 Data for this project, I used characters.json and episodes.json from https://github.com/jeffreylancaster/game-of-thrones.
 
+Live website: https://got.seilcho7.dev
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
