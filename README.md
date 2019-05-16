@@ -1,4 +1,7 @@
 # Game Of Thrones App
+
+![Image description](https://i.imgur.com/IfV1MH5.png)
+
 A website about popular tv show from HBO, game of thrones, intended to show description of each characters and episodes.
 Purpose of this mini project was to use React.js along with Router to build a simple, working website.
 Data for this project, I used characters.json and episodes.json from https://github.com/jeffreylancaster/game-of-thrones.
