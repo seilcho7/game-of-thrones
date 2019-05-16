@@ -3,7 +3,9 @@ html, body {
 }
 
 /* comment */
-
+.class {
+    width: 0;
+}
 .nav {
     font-family: 'Game of Thrones';
     font-weight: normal;
