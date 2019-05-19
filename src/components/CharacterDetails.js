@@ -4,6 +4,7 @@ import avatar from '../data/img/avatar.png';
 import allyrion from '../data/img/allyrion.jpg';
 import arryn from '../data/img/arryn.jpg';
 import baratheon from '../data/img/baratheon.jpg';
+import bolton from '../data/img/bolton.jpg';
 import cerwyn from '../data/img/cerwyn.jpg';
 import clegane from '../data/img/clegane.jpg';
 import crakehall from '../data/img/crakehall.jpg';
@@ -41,6 +42,7 @@ export default function CharacterDetails({character}) {
         Allyrion: allyrion,
         Arryn: arryn,
         Baratheon: baratheon,
+        Bolton: bolton,
         Cerwyn: cerwyn,
         Clegane: clegane,
         Crakehall: crakehall,
