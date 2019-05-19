@@ -70,7 +70,7 @@ export default function CharacterDetails({character}) {
         houses = character.houseName;
     } else {
         houses = null;
-    }
+    };
 
     let sigil = [];
     if (houses && typeof houses === "string") {
