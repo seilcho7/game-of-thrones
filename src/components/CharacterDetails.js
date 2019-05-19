@@ -36,7 +36,7 @@ export default function CharacterDetails({character}) {
         });
     } else {
         names = [];
-    }
+    };
 
     const sigils = {
         Allyrion: allyrion,
