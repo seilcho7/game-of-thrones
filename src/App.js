@@ -37,9 +37,9 @@ class App extends React.Component {
           <div className="title">
             <img src={logo}></img>
           </div>
-          <div className="soundcloud">
+          {/* <div className="soundcloud">
             <iframe title="soundcloud" width="20px" height="20px" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/30990827&color=%23ff5500&auto_play=true&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
-          </div>
+          </div> */}
         </div>
         <div>
           <ul className="nav justify-content-center">
